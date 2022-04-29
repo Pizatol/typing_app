@@ -31,7 +31,7 @@ async function afficherNvPhrase(){
 
     const appel = await fetch(APICALL);
     const resultats = await appel.json();
-    // console.log(resultats);
+    console.log(resultats);
     const phrase = resultats.content;
 
     phrasePourScore = phrase.length;
@@ -61,7 +61,7 @@ phraseTest.addEventListener('input', () => {
     let correct = true;
 
     tableauPhrase.forEach((caracSpan, index) => {
-        console.log(caracSpan)
+     
 
         const caractere = tableauTest[index];
         
